@@ -1,0 +1,76 @@
+
+
+
+
+div {
+    /*display:flex;
+    justify-content: center;
+    align-self: center;*/
+    background-color: burlywood;
+    width: 600px;
+    height: 900px;
+    
+   
+
+}
+
+.one{
+
+    font-size: 1100px;
+    position:fixed;
+    top:-140px;
+    left:-90px;
+    align-self:center;
+}
+
+.bigp{
+
+    font-size: 550px;
+    transform: rotate(-25deg);
+    position:fixed;
+    top:40px;
+    left:220px;
+    align-self:center;
+
+    
+
+}
+
+.wheel{
+
+    font-size: 200px;
+    color:white;
+    position: fixed;
+    top:400px;
+    left:235px;
+
+}
+
+.long{
+
+    font-size: 30px;
+    position:fixed;
+    top:820px;
+   
+    left:350px;
+    
+}
+
+.name {
+
+    font-size:40px;
+    position:fixed;
+    top: 150px;
+    left: 340px;
+    transform:rotate(30deg);
+}
+
+.idk{
+    
+    background-color: burlywood;
+    font-size: 25px;
+    position:fixed;
+    top:290px;
+    left:390px;
+    transform:rotate(20deg);
+}

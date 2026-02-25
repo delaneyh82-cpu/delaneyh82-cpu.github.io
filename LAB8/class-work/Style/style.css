@@ -1,0 +1,105 @@
+*{
+
+    outline: solid 2px magenta;
+}
+
+:root{
+
+    font-size:18pt;
+
+}
+
+main{
+
+    width:60vw;
+    padding-top: 200px;
+    background-color:rgb(127, 103, 143);
+    color:rgb(235, 233, 217);
+}
+
+main div{
+
+    position:relative;
+
+    background-color: rgb(71, 63, 93);
+    min-height: 200px;
+
+}
+/*
+main img{
+
+    max-width:100px;
+} */
+
+.starry{
+
+    position:absolute;
+    right:0px;
+    top: 0px;
+    max-width:50px;
+}
+
+.moon{
+
+    position:absolute;
+    right:0px;
+    top: 0px;
+    max-width:100px;
+}
+
+.chat{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 100px;
+    max-height: 100px;
+    z-index: 2;
+}
+
+header{
+    background-color:rgb(44, 30, 61);
+    padding:10px;
+    position:fixed;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    color:antiquewhite;
+    opacity: 0.9;
+    z-index:1;
+}
+    
+.mphoto{
+
+    width:50%;
+    position:sticky;
+    top:220px;
+    left:0px;
+    align-self: flex-start;
+    order: 2;
+}
+
+div {
+    background-color: rgb(127, 103, 143);
+   
+}
+
+main div:nth-of-type(1) div {
+
+    width: 60%;
+    order:1;
+    
+}
+
+main > div:nth-of-type(1) {
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+    
+}
+
+.lol{
+
+    background-color:rgb(127, 103, 143) ;
+}
