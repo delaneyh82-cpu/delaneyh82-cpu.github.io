@@ -1,0 +1,57 @@
+:root{
+
+    font-size: 24px;
+}
+
+
+
+#grid-container{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+img{
+
+    width: 100%;
+    height: auto;
+}
+
+main{
+
+    display: grid;
+    grid: "header header header header" "side menu menu menu" "side page page page" "footer footer footer footer";
+}
+
+
+header, nav, article, footer, aside {
+
+    border: 5px solid black;
+    padding:0.7rem;
+
+}
+
+header{
+
+    grid-area: header;
+}
+
+nav{
+    grid-area:menu;
+}
+
+article{
+
+    grid-area: page;
+}
+
+footer{
+
+    grid-area: footer;
+}
+
+aside{
+
+    grid-area: side;
+}
