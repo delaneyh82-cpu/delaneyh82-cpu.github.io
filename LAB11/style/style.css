@@ -1,0 +1,94 @@
+.circle-ease{
+    border: 1px magenta solid;
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    animation-name: circleMove;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+
+}
+
+.circle-linear{
+    position:absolute;
+    top:0px;
+    left:400px;
+    border: 1px magenta solid;
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    animation-name: yellowCircle;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+   
+}
+
+.purple {
+
+    background-color:rebeccapurple;
+}
+
+.yellow{
+
+    background-color:rgb(247, 215, 6);
+}
+
+.circle-ease:hover{
+
+    width: 300px;
+    height: 300px;
+    
+}
+
+.circle-linear:hover{
+
+    width: 300px;
+    height: 300px;
+    
+}
+
+@keyframes circleMove {
+
+    0% {
+
+        transform: translateY(85vh);
+        height: 200px;
+    }
+
+    20%{
+
+        transform: translateY(80vh);
+        height:200px;
+    }
+
+
+
+    100%{
+
+        transform: translateY(0px);
+        height:200px;
+    }
+}
+
+@keyframes yellowCircle {
+
+    0% {
+
+        transform: translateY(85vh);
+        height: 200px;
+    }
+
+
+
+
+    100%{
+
+        transform: translateY(0px);
+        height:200px;
+    }
+}
