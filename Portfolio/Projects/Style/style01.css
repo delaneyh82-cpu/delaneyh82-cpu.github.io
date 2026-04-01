@@ -1,0 +1,101 @@
+
+
+/* header{
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    
+} */
+
+
+
+
+header{
+
+    width: 100vw;
+    height: 350px;
+
+    background-image: url("../vector2-1.png");
+    background-repeat: repeat-x;
+    background-color: rgb(30, 30, 30);
+    background-size: 200px 250px;
+    background-position: bottom;
+
+}
+
+
+#name{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 60px;
+    left: 17vw;
+    width: 60vw;
+    padding: 10px;
+   
+}
+
+
+
+
+#name-box{
+    background-color: rgb(16, 16, 16);
+    background-image: url("../vintage-gabriel-weather-vane-vector-illustration-remixed-from-artwork-by-harriette-gale\ 3.png");
+    background-size: 100px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:relative;
+    
+}
+
+ 
+  h2{
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    
+ } 
+/*
+ img{
+
+    display: flex;
+    width: 100vw;
+    align-items: flex-start;
+    gap: 53px;  
+
+ }*/
+
+ #phone1 > img{
+
+    display: flex;
+    flex-direction:row;
+    align-items: left;
+    gap: 77px;
+    align-self: stretch;
+    width: 50%;
+    height: 30%;
+    padding: 5vw;
+    
+ }
+
+#iphone1 > p{
+
+    display: flex;
+    flex-direction:column;
+    align-items: right;
+    align-self: stretch;
+
+ }
+
+
+
