@@ -114,8 +114,8 @@ div{
 }
 
 #scrolly{
-
-    padding:5vw 5vw 5vw 10vw;
+    
+    padding:0vw 0vw 0vw 10vw;
     display: grid;
     grid-auto-columns: 100%;
     grid-auto-flow: column;
@@ -167,10 +167,9 @@ div{
 
 #grid-container{
     outline: green solid 5px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    align-self: stretch;
+    display: grid;
+    grid-template-columns: 3, 2fr;
+    
     padding: 5vw 10vw 5vw 10vw;
     width: 80%;
     height: 100%;
@@ -180,6 +179,7 @@ div{
      img{
         width: 50%;
         height: 70%;
+        
     }
 }
 
@@ -188,9 +188,10 @@ div{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    align-self: stretch;
     
-    gap: 20px;
     width: 80vw;
+   
     
 
 }
@@ -211,8 +212,8 @@ div{
     width: 80vw;
     gap: 10px;
 
-    position: absolute;
-    top: 110vh;
+    
+
 }
 
 #crow > p {
@@ -232,12 +233,12 @@ div{
 
     position: absolute;
     top: 68vh;
-    outline:blue solid 5px;
+    
 }
 
 #skeleton > p{
 
-    width: 38vw;
+    width: 37vw;
     text-align: justify;
 }
 
@@ -246,14 +247,151 @@ div{
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
+    width: 80vw;
     gap: 20px;
 
-    position: relative;
-    bottom: 40vh
-
+    
 
 }
+
 #axe > #snakess{
         width: 100%;
         height: 60%;
     }
+
+#trio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    width: 80vw;
+    gap: 20px;
+    padding: 5vw 10vw 5vw 10vw;
+   
+
+    img{
+        width: 100%;
+        height: 60%;
+    }
+}
+#deux{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+#T{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    align-self: stretch;
+    width: 80vw;
+    gap: 20px;
+    
+
+    img{
+        width: 20vw;
+        height: 10%;
+    }
+
+    p{
+        width: 40vw;
+        height: 10%;
+        text-align: justify;
+        
+    }
+}
+
+#door{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    gap: 20px;
+
+   
+}
+
+#doorss{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+    gap: 20px;
+    order: 2;
+
+    img{
+        
+        width: 50%;
+        height: 60%;
+        object-fit: cover;
+    }
+
+    img:nth-child(2){
+        width: 38vw;
+        
+    }
+
+}
+
+#projectsss{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60vw;
+    padding: 5vw 20vw 5vw 20vw;
+
+    img{
+        width: 25vw;
+        
+    }
+
+    h3{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
+
+#projectss2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60vw;
+    padding: 5vw 20vw 5vw 20vw;
+
+
+    img{
+        width: 25vw;
+    }
+
+}
+
+#projectpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
