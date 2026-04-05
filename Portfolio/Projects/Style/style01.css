@@ -395,3 +395,211 @@ div{
     justify-content: center;
     align-items: center;
 }
+
+#booklets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80vw;
+    padding: 5vw 10vw 5vw 10vw;
+
+    img{
+        width: 40vw;
+        
+        
+    }
+}
+
+#twobook{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+   
+}
+
+#booktext{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#rivalry{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#textbook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 50vw;
+
+    img{
+        width: 100%;
+    }
+}
+
+#glassbook{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+
+    width: 30vw;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+#pamphlet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80vw;
+    padding: 5vw 10vw 5vw 10vw;
+
+    img{
+        width: 100%;
+    }
+    
+}
+
+#urec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80vw;
+    padding: 5vw 10vw 5vw 10vw;
+
+    img{
+        width: 100%;
+    }
+}
+
+#intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 80vw;
+    
+    p{
+        width: 20vw;
+        text-align: justify;
+        justify-content: flex-start;
+    }
+
+    img{
+        width: 20vw;
+        
+    }
+
+    #lightbox {
+        width: 80%;
+       justify-content: flex-end;
+    }
+}
+
+#newstand{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    text-align: justify;
+    width: 20vw;
+}
+
+#displays{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 80vw;
+
+    
+   
+
+    p{
+        width: 30vw;
+        text-align: justify;
+    }
+}
+
+#lightbox{
+    width: 50vw;
+}
+
+#grouped{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    width: 30vw;
+   
+}
+
+#golf{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 80vw;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+#fitness{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80vw;
+
+    img{
+        width: 100%;
+    }
+}
+
+#sporty{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 80vw;
+
+    img{
+        width: 100%;
+    }
+}
