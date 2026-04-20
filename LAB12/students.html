@@ -8,14 +8,21 @@
 </head>
 <body>
 
+     <div id="overlay-menu" class="overlay-menu open" style="background-color: white; display: flex;">
+        <a href="#" onClick="closeOverlay()">CLOSE</a>
+        <a href="index.html">Home</a>
+        <a href="students.html">Students</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
     <header>
         <span class="brand">Class of 2027</span>
         <nav>
             <a href="a">☰</a>
-            <a href="a">Home</a>
-            <a href="a">Students</a>
-            <a href="a">Projects</a>
-            <a href="a">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="students.html">Students</a>
+        
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
@@ -44,9 +51,11 @@
                 </div>
 
                 <div class="student-card">
-                    <div class="img-placeholder"></div>
-                    <h2>Marayla Cross</h2>
-                    <p>Roses are red, violets are blue.</p>
+                    <a href="bios.html">
+                        <div class="img-placeholder"></div>
+                        <h2>Marayla Cross</h2>
+                        <p>Roses are red, violets are blue.</p>
+                    </a>
                 </div>
 
                 <div class="student-card">
@@ -109,6 +118,8 @@
         <p>Footer, more info to come!</p>
         
     </footer>
+
+     <script src="JS/script.js"></script>
     
 </body>
 </html>

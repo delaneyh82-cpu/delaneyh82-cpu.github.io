@@ -8,15 +8,22 @@
 </head>
 <body>
 
+    <div id="overlay-menu" class="overlay-menu open" display: flex;>
+        <a href="#" onClick="closeOverlay()">CLOSE</a>
+        <a href="index.html">Home</a>
+        <a href="students.html">Students</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
     <header>
         <span class="brand">Class of 2027</span>
-        <nav>
-            <a href="a">☰</a>
-            <a href="a">Home</a>
-            <a href="a">Students</a>
-            <a href="a">Projects</a>
-            <a href="a">Contact</a>
-        </nav>
+            <nav>
+                <a href="#" onClick="openOverlay()">☰</a>
+                <a href="index.html">Home</a>
+                <a href="students.html">Students</a>
+            
+                <a href="contact.html">Contact</a>
+            </nav>
     </header>
 
     <main>
@@ -32,7 +39,7 @@
                     <img src="img/class-vertical.webp" alt="My Image">
                 </picture>
 
-                <h1>GD Cohort of '27</h1>
+                <div id="grid3x1"><h1>GD Cohort of '27</h1></div>
             </Div>
             
         </section>
@@ -40,6 +47,7 @@
        
         
     </main>
+
 
     <footer> More info to come!</footer>
 
@@ -60,6 +68,8 @@
         </section>
 
     </div>
+
+    <script src="JS/script.js"></script>
 
 </body>
 </html>

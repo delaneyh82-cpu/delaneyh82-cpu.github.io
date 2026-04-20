@@ -10,6 +10,11 @@
    
 }
 
+#students a{
+
+    color:unset;
+}
+
 .student-grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -20,18 +25,11 @@
 
 
 #students > h1{
-/*
-    grid-column: 2 / ;
-    grid-row: 1; */
-}
-.img-placeholder{
 
-    width: 100%;
-    height: 200px;
-    background-color: rgb(255, 237, 199);
-    border-radius: 10px;
-    gap: 20px;
+    grid-column: 1 / 3;
+    grid-row: 1; 
 }
+
 
 /*Bios*/
 
@@ -42,6 +40,19 @@ section#bios{
   
 }
 
+.student-bio{
+
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gridGap);
+}
+
+
+
+.studnet-bio > img{
+
+    object-fit: 100%;
+}
 
 .student-grid > div{
 
@@ -95,7 +106,6 @@ nav{
 
 nav > a{
 
-    text-decoration: none;
     color: var(--primaryColor);
     font-size: 1.3rem;
     padding: var(--cardPadding);
@@ -123,6 +133,48 @@ nav > a:nth-of-type(2), nav > a:nth-of-type(3), nav > a:nth-of-type(4), nav > a:
     display: none;
 }
 
+.overlay-menu {
+
+    background-color:rgb(193, 36, 101);
+    width: 0vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+    font-size: 1.3rem;
+    transition: ease-out 3s;
+    overflow: visible;
+}
+
+#overlay-menu a{
+
+    color: white;
+    padding: var(--cardPadding);
+
+}
+
+#overlay-menu a:nth-of-type(1){
+    position: absolute;
+    top: var(--cardPadding);
+    right: var(--cardPadding);
+}
+
+/*.overlay-menu open{
+    display: flex;
+}*/
+
+.student-card:hover{
+
+    background-color:rgb(115, 12, 126)
+}
+
 
 /*Style for ipad*/
 @media screen and (min-width: 760px){
@@ -134,10 +186,16 @@ nav > a:nth-of-type(2), nav > a:nth-of-type(3), nav > a:nth-of-type(4), nav > a:
 
     .student-grid{
 
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
+    .student-bio{
+
+        display:grid;
+        grid-template-columns: repeat(1, 1fr 1fr);
+        gap: var(--gridGap);
+    }
   
 }
 
@@ -158,8 +216,27 @@ body{
     gap: var(--gridGap);
     background-color: rgb(90, 0, 100);
     padding: var(--cardPadding);
+   
 }
 
+.img-placeholder{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-height: 600px;
+    
+    background-color: rgb(255, 237, 199);
+    border-radius: 10px;
+    gap: 20px;
+    min-height: 200px;
+    overflow:hidden;
+
+}
+
+a{
+    text-decoration: none;
+    
+}
 
 
 .flexH{
@@ -301,15 +378,21 @@ footer{
 
     #students{
      grid-template-columns: repeat(1, 1fr 4fr 1fr);
-
-        .student-grid{
-
-            grid-column: 2;
-            grid-row: 1;
-            
-        }
     
     }
+
+    .student-grid{
+        display: grid;
+        grid-template-columns:  repeat(3, 3fr );
+    }
+/*
+    #students > h1, #bios > h1{
+
+        grid-column: 2;
+        grid-row: 1; 
+    }
+*/
+    
 
     nav > a:nth-of-type(1) {
     display: none;
@@ -321,12 +404,18 @@ footer{
         display: unset;
     }
     
-    .grid3x1 > *{
+    .grid3x1 > :nth-child(1){
 
         grid-column: 2;
         grid-row: 1;
-       
-        grid-template-columns: repeat(3, 1fr);
         
+    }
+
+    /*make sure to only have one div isnide sections with this class*/
+    .grid3x1  > :nth-child(2){
+
+        grid-column: 2;
+        grid-row: 2;
+    
     }
 }
