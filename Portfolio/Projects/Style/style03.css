@@ -1,6 +1,6 @@
 *{
     color: white;
-   
+  
 }
 
 a{
@@ -10,6 +10,15 @@ a{
 a:hover{
     transform: scale(1.5);
 }
+
+/*font-family: "gil-modern", sans-serif;
+font-weight: 400;
+font-style: normal; 
+
+font-family: "rhau", sans-serif;
+font-weight: 400;
+font-style: normal;*/
+
 /*
     font-family: "barteldes-small", serif;
     font-weight: 200;
@@ -63,10 +72,6 @@ header{
     background-color: rgb(29, 29, 29);
     background-size: 125px 175px;
     background-position: top;
-    position: relative;
-
-    
-
 }
 
 
@@ -81,6 +86,7 @@ header{
     left: 2vw;
     width: 30%;
     padding: 0px;
+
    
 }
 
@@ -110,16 +116,17 @@ header{
     width: 100vw;
     height: 40vh;
 
-    font-family: "barteldes-small", serif;
-    font-weight: 700;
-    font-style: normal;
+   font-family: "rhau", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+
     
  } 
 
  img{
 
     display: flex;
-    width: 50vw;
+    width: 100vw;
     align-items: center;
     gap: 53px;  
     padding: 10vw 0vw 10vw 0vw;
@@ -129,8 +136,14 @@ header{
 
  p{
     text-align: justify;
-    padding: 0px 7vw 0px 7vw;
+    padding: 10px 7vw 10px 7vw;
     justify-content: center;
+    line-height: 1.8;
+    
+
+    font-family: "paradigm-pro", serif;
+    font-weight: 300;
+    font-style: normal;
  }
 
 
@@ -142,85 +155,50 @@ header{
     gap: 50px;
 
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     background-color:rgb(16, 16, 16);
     color: white;
 
 }
 
  #grid-container{
-        display: inline-grid;
-        grid-template-columns: 1 1fr;
-        align-content: center;
-        width: 100vw;
-        background-color: rgb(29, 29, 29);
+    display: inline-grid;
+    grid-template-columns: 1 1fr;
+    align-content: center;
+    width: 100vw;
+    background-color: rgb(29, 29, 29);
+        
 
         /*padding: 10vw 10vw 10vw 10vw;
         align-items: center;
         justify-content:center;*/
     
-    }
+}
 
 div{
    
     display: flex;
     width: 100vw;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#textblock{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
 
 
+@media screen and (min-width:992px){
 
-
-
-
-
-
-
-@media screen and (max-width: 700px){
-
-    img{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100vw;
-
-    }
 
     div{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
        
     }
    
-   
-
-    #grid-container{
-        display: grid;
-        grid-template-columns: 2 1fr;
-        grid-template-rows: 2 1fr;
-        background-color: rgb(29, 29, 29);
-        overflow-x: scroll;
-
-        width: 100vw;
-   
-   
-    }
 
     main{
 
@@ -234,35 +212,40 @@ div{
         flex-direction: column;
 
     }
-    
-   
-
-    
-    #axe, #linoleum, #skeleton , #crow, #snakess > #grid-container{
-        width: 40vw;
-
-
-        img{
-            width: 30%;
-        }
-    }
-}   
-
-
-@media screen and (max-width:1600px){
 
     #grid-container{
         display: grid;
         grid-template-columns: 2 1fr;
         grid-template-rows: 2 1fr;
-        background-color: rgb(29, 29, 29);
-        overflow-x: scroll;
-        
-        width: 100vw;
-        
-        
-   
+       
     }
+
+    img#scrolly{
+   
+    overflow-x:hidden;
+    animation: ease-in 4s;
+
+    img{
+        width: 0vw;
+        height: 100%;
+        object-fit:cover;
+    }
+    
+}
+
+@keyframes scrolly{
+    0% {
+
+        transform: translateX(100vh);
+        height: 200px;
+    }
+
+     100%{
+
+        transform: translateX(0vh);
+        height:200px;
+    }
+}
 
     #scrolly {
         padding: 0vw 10vw 0vw 10vw;
@@ -276,6 +259,7 @@ div{
         scroll-behavior: smooth;
         width: 100%;
         height: 100%;
+
     
 
     #jump, #sheep3, #smusic{
@@ -287,9 +271,10 @@ div{
     }
 
     img{
-        width: 90%;
+        width: 100%;
         object-fit:cover;
     }
+    */
 
     #heralds{
 
@@ -297,8 +282,34 @@ div{
         flex-direction: column;
     }
     
+}
+
+#fields{
+
+    width: 40vw;
+    height: 10vw;
+    
+    background-color: grey;
+}
+
+#about{
+    display: flex;
+    flex-direction: row;
+  
+
+    #me{
+        clip-path: circle(35%);
+        width: 50%;
+        height: 75%;
+        padding: 0vw;
     }
 
+    #meme p{
+        width: 40vw;
+        padding: 0vw 0vw 10vw 0vw
+    }
+}
+ 
 
 #name{
     display:flex;
@@ -314,68 +325,245 @@ div{
    
 }
 
-#colore, #chocolate{
+#twobook, #rivalry, #pamphlet{
 
-    width: 80vw;
-}
-
-#displays{
     display: flex;
     flex-direction: row;
+    width: 80vw;
+    padding: 10vw 0vw 10vw 0vw;
+
+    img{
+        width: 40vw;
+        padding: 8vw 0vw 8vw 0vw;
+    }
+
+    p{
+       width: 30vw;
+        padding:5vw;
+    }
     
+    #colore, #chocolate{
+
+    width: 80vw;
+
 }
+#booktext{
+    img{
+        padding: 5vw 0vw 0vw 0vw;
+    }
+}
+
+#homepage{
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+
+}
+
+
+
 
 h3{
     padding: 5vw;
 }
 
+ 
+#trees {
+    display: flex;
+    flex-direction: column;
 
+    img{
+       width: 80vw; 
+    }
+    
+}
+
+#door{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    outline: green solid 3px;
+    
+    width: 80vw;
+        
+    img{
+        width: 40vw;
+    }
 
 }   
- 
+
+#door2{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    
+    img{
+        padding: 10vw 0vw 0vw 0vw;
+        width: 36vw;
+    }
+
+    p{
+        width: 30vw;
+    }
+}
+
+
+
+#snakess, #axe, #linoleum, #skeleton, #crow {
+
+    width: 80vw;
+
+    img{
+        width: 50%;
+        padding: 5vw 0vw;
+    }
+}
+
+
+#phone1s, #video1{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    padding: 0vw 0vw 0vw 0vw;
+    width: 80vw;
+
+    img{
+        width: 40vw;
+    }
+}
+
+
+#deux{
+
+    img{
+        width: 40vw;
+        height: 30vw;
+        
+    }
+}
+#T{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 40vh;
+}
+
+#intro, #displays, #sporty, #dt{
+    display: flex;
+    flex-direction:row;
+    width: 80vw;
+
+    img{
+        width: 40vw;
+        padding: 5vw 0vw;
+    }
+
+    p{
+        width: 25vw;
+        padding: 0vw 7.5vw;
+    }
+}
+
+#displays {
+
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+
+    img{
+        width:40vw;
+        height: 30vw;
+    }
+}
+#dt{
+    width: 80vw;
+
+    p{
+        width: 70vw;
+    }
+}
+
 #projectsss div , #projectss2 div {
 
+    margin-top: 5vw;
     display: flex;
     flex-direction:column;
    
-    #projectss2 div img{
+    img{
+        width: 25vw;
+        padding:0vw;
+    } 
 
-        width: 65%;
     
-    }
-
-    #projectsss div img{
-
-        width: 65%;
-   
-    }
     h3{
         position: relative;
         top: -20px;
     }
     
+}
+
+video{
+
+    width: 40vw;
+    height: 60vw;
+    border-radius: 15%;
+    justify-content: center;
+    padding:0vw 0vw 15vw 0vw;
     
+}
+
+#mainglass img{
+
+    position:absolute;
+    right: 10vw;
+
+}
+
+.image{
+
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+    left: 15vw;
+    bottom: 15vw;
+
+    h1{
+        font-size: 5rem;
+        position: relative;
+        right: 5vw;
+        text-align: center;
+    }
+    
+}
 
 }
 
 
-
-
-
-#axe, #linoleum, #skeleton , #crow, #snakess > #grid-container{
-    
-    width: 30vw;
-
+#heralds1{
 
     img{
-     width: 50%;
+        width: 15vw;
+        padding: 0vw;
     }
 }
 
 
 
 
-
+/*mobile*/
 
 
 
@@ -386,10 +574,8 @@ h3{
     align-items: center;
     font-size: 1.2rem;
     
-    
-
-    font-family: "barteldes-small", serif;
-    font-weight: 700;
+    font-family: "rhau", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -402,12 +588,24 @@ h3{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;
     align-content: center;
-    align-self: center;
-
-    padding: 5vw;
+    align-self: center;*/
+    
+    animation: rotate 40s linear infinite;
+    position:static;
+    filter:brightness(1.1)
    
+}
+
+
+
+@keyframes rotate{
+
+    
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+
 }
 
 h1{
@@ -419,11 +617,13 @@ h1{
     font-size: 2.8rem;
 
     position: relative;
-    top: 30px;
-
+    top: 20px;
+    
     font-family: "p22-civilite-no30", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 0px;
+    margin: 0px;
     
 }
 
@@ -449,54 +649,19 @@ h1{
     p{
         font-size: 1.5rem;
     }
-
 }
 
-
-#projectsss div, #projectss2 div {
-
-    display: flex;
-    flex-direction: column;
-
-    h3{
-        position: relative;
-        top: -70px;
-    }
-    
-    outline: 3px solid rgb(23, 22, 22);
-   
-}
-#projectss2 div img{
-
-    width: 65%;
-    
-}
-
-#projectsss div img{
-
-    width: 65%;
-   
-}
-
-#projectsss img:hover, #projectss2 img:hover{
-
-    filter:blur(5px);
-}
-
-
-
-
-
-
-
-
-#snakess, #axe, #linoleum, #skeleton, #crow {
-
-    width: 90vw;
+#projectsss, #projectss2{
 
     img{
-        width: 100vw;
+        width: 80vw;
     }
+}
+
+
+#homebody{
+
+    background-color: black;
 }
 
 #typo{
@@ -505,29 +670,71 @@ h1{
     flex-direction: column;
     
 }
-
-#twobook, #rivalry, #pamphlet{
-
+ 
+#trees{
     display: flex;
     flex-direction: column;
     
 }
 
 
-#colore, #chocolate{
+#twobook, #rivalry, #pamphlet{
 
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    
+    img{
+        padding: 0vw;
+    }
 }
 
-#intro, #displays, #sporty{
+
+#intro,  #sporty{
     display: flex;
     flex-direction: column;
 }
 
-#iphone1 > #grid-container{
 
-    width: 80vw;
-    padding:20vw;
+
+#names p, #email p, #message p{
+
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 10vw;
+    
+    background-color: grey;
 }
 
+#about{
+display: flex;
+flex-direction: column;
+gap: 0vw; 
+
+    #me{
+        clip-path: circle(35%);
+        width: 80%;
+        height: 105%;
+        padding: 0vw;
+    }
+    #meme p{
+        width: 80vw;
+        padding: 0vw 0vw 10vw 0vw
+    }
+}
+
+video{
+
+    width: 50vw;
+}
+
+
+/*#light{
+    width: 70vw;
+    height: 100vw;
+    background-color: rgba(193, 171, 182, 0.1);
+    position: absolute;
+    top:40vw;
+    transform: skewX(-15deg);
+}*/
 
