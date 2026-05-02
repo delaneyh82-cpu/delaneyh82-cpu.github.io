@@ -20,27 +20,44 @@
     <h2>Contact Me</h2>
 </header>
 <body>
-    <main id="grid-container">
+    <main>
 
-        <div id="fields">
+        <form id="forms" action="">
 
-            <div id="names">
-                <p>Name</p>
+            <label for="fullname" >Full Name:</label>
+            <input type="text" id="fullname" placeholder="Who are you?" name="fullname" required>
+
+            <label for="Subject">Subject:</label>
+            <input type="text" id="subject" placeholder="What's up?" name="subject">
+
+            <label for="Email">Email:</label>
+            <input type="email" id="email" placeholder="Email" name="email" required>
+
+            <span> Are you in the US?</span>
+            <div>
+                <input type="radio" name="location" id="yes" value="yes">
+                <label for="yes">Yes</label>
+
+                <input type="radio" name="location" id="no" value="no">
+                <label for="no">No</label>
             </div>
 
-            <div id="email">
-                <p>Email</p>
+            <label for="Message">Message:</label>
+            <textarea type="message" id="message" cols="20" rows="10" placeholder="Your message" required></textarea>
+
+
+            <div>
+                <input type="checkbox" name="consent" id="consent" value="yes">
+                <label for="consent"> I consent to recieve communications from you.</label>
             </div>
 
-            <div id="message">
-                <p>What would you like to know?</p>
-            </div>
+            <input type="submit">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
 
-            <div id="button">
-                <p>Submit</p>
-            </div>
 
-        </div>
+        </form>
+
     </main>
 
 </body>
