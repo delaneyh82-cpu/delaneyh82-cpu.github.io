@@ -7,9 +7,9 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+/*a:hover{
     transform: scale(1.5);
-}
+}*/
 
 /*font-family: "gil-modern", sans-serif;
 font-weight: 400;
@@ -179,7 +179,7 @@ header{
 div{
    
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -296,21 +296,21 @@ div{
 }
 
 #about{
-    display: flex;
-    flex-direction: row;
+    
+  display: flex;
+  flex-direction: row;
   
 
-    #me{
+   #me{
         clip-path: circle(35%);
-        width: 50%;
-        height: 75%;
-        padding: 0vw;
     }
 
-    #meme p{
+    /*#meme p{
+        display: flex;
+        flex-direction: column;
         width: 40vw;
         padding: 0vw 0vw 10vw 0vw
-    }
+    }*/
 }
  
 
@@ -498,17 +498,13 @@ h3{
     }
 }
 
-#projectsss div , #projectss2 div {
+#projectsss, #projectss2  {
 
-    margin-top: 5vw;
+    
     display: flex;
-    flex-direction:column;
-   
-    img{
-        width: 25vw;
-        padding:0vw;
-    } 
-
+    flex-direction:row;
+    justify-content: center;
+    padding: 0%;
     
     h3{
         position: relative;
@@ -516,6 +512,20 @@ h3{
     }
     
 }
+
+#projectss2 div{
+
+   
+
+    img{
+        width: 55%;
+        padding: 0% 0% 15% 0%;
+        
+    }
+
+}
+
+
 
 video{
 
@@ -556,14 +566,28 @@ video{
 .overlay {
     position: fixed;
     top:0%;
-    bottom: 0%;
+    bottom: 40%;
     left: 12.5%;
     right: 0;
 
-    height: 25vw;
-    width: 25vw;
+    height: 30%;
+    width: 30%;
     max-width: 25vw;
     max-height: 25vw;
+    opacity: 0;
+    transform: rotate(180deg);
+    transition: .5s grow;
+    border-radius: 100%;
+    
+}
+
+.overlay2 {
+    
+
+    height: 30%;
+    width: 30%;
+    max-width: 27vw;
+    max-height: 27vw;
     opacity: 0;
     transform: rotate(180deg);
     transition: .5s grow;
@@ -575,7 +599,7 @@ video{
   opacity: 5;
   transform: rotate(0deg);
   position: absolute;
-    top:-20%;
+    top:23%;
     bottom: 0%;
     left: 12.5%;
     right: 0;
@@ -586,38 +610,14 @@ video{
 
 }
 
-
-
-.text {
-  color: white;
-  font-size: 20px;
-    position: absolute;
-    top: -10%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-.overlay2 {
-     
-    height: 25vw;
-    width: 25vw;
-    max-width: 25vw;
-    max-height: 25vw;
-    
-    opacity: 0;
-    transition: .5s;
-    
-}
-
-.container2:hover .overlay2 {
+.container:hover .overlay2 {
   opacity: 5;
+  transform: rotate(0deg);
   position: absolute;
-    top: -20%;
+    top:2%;
     bottom: 0%;
-    left: 25%;
-    right: 0%;
+    left: 24%;
+    right: 0;
 
   img{
     filter: blur(4px);
@@ -626,11 +626,34 @@ video{
 }
 
 
+.text {
+  color: white;
+  font-size: 20px;
+    position: absolute;
+    top: 0%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
+.overlay2 {
+     
+    height: 30%;
+    width: 30%;
+    max-width: 26vw;
+    max-height: 26vw;
+    
+    opacity: 0;
+    transition: .5s;
+    
+}
 
 
 }
+
+
+
 
 
 #heralds1{
@@ -735,7 +758,7 @@ h1{
 #projectsss, #projectss2{
 
     img{
-        width: 80vw;
+        width: 80%;
     }
 
     filter: drop-shadow(6px 4px 10px #000000);
@@ -793,20 +816,19 @@ h1{
 }
 
 #about{
-display: flex;
-flex-direction: column;
-gap: 0vw; 
+    display: flex;
+    flex-direction: column;
+    gap: 0vw; 
 
     #me{
         clip-path: circle(35%);
-        width: 80%;
-        height: 105%;
         padding: 0vw;
     }
+    /*
     #meme p{
         width: 80vw;
-        padding: 0vw 0vw 10vw 0vw
-    }
+        padding: 0vw 0vw 0vw 0vw
+    }*/
 }
 
 video{
@@ -834,14 +856,14 @@ video{
     position: absolute;
     top: 10%;
     bottom: 150%;
-    left: -7%;
-    right: 60%;
-    height: 80vw;
-    width: 80vw;
+    left: 7%;
+    right: 0%;
+    height: 80%;
+    width: 85%;
     opacity: 0;
     transition: .5s ease;
     border-radius: 100%;
-    background-color: #56062acc;
+    background-color:hsla(317, 33%, 52%, 0.81);;
  
 }
 
@@ -860,6 +882,10 @@ video{
 
 .text {
   color: white;
+
+    font-family: "rhau", sans-serif;
+    font-weight: 200;
+    font-style: normal;
   font-size: 30px;
     position: relative;
     bottom:0px;
@@ -872,19 +898,19 @@ video{
 
 .overlay2{
     position: absolute;
-    top: 10%;
-    bottom: 150%;
-    left: -30%;
-    right: 60%;
-    height: 80vw;
-    width: 80vw;
+    top: 10.5%;
+    bottom: 0%;
+    left: 6.5%;
+    right: 0%;
+    height: 60vw;
+    width: 60vw;
     opacity: 0;
     transition: .5s ease;
     border-radius: 100%;
-    background-color: #56062acc;
+    background-color: hsla(317, 33%, 52%, 0.844);
 }
 
-.container2:hover .overlay2 {
+.container:hover .overlay2 {
   opacity: 5;
 
   img{
@@ -893,10 +919,6 @@ video{
 
 }
 
-.container2 {
-  position: relative;
-  width: 50%;
-}
 
 #forms{
     height: 500px;
