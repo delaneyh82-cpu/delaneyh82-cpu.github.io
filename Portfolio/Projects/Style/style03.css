@@ -212,6 +212,7 @@ div{
         display: flex;
         flex-direction:row;
         padding: 0vw;
+        
     }
 
     #grid-container{
@@ -234,58 +235,70 @@ div{
     
 }
 
-@keyframes scrolly{
+@keyframes slide{
     0% {
 
-        transform: translateX(100vh);
-        height: 200px;
+        transform: translateX(0vw);
+        height: 100%;
     }
 
      100%{
 
-        transform: translateX(0vh);
-        height:200px;
+        transform: translateX(100vw);
+        height:100%;
     }
 }
 
     #scrolly {
-        padding: 0vw 10vw 0vw 10vw;
-        display: grid;
-        grid-auto-columns: 100%;
-        grid-auto-flow: column;
-        overflow-x: auto;
-        overscroll-behavior: contain;
-        scroll-snap-type: mandatory;
-        scrollbar-width: none;
-        scroll-behavior: smooth;
-        width: 100%;
-        height: 100%;
-
-    
-
-    #jump, #sheep3, #smusic{
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-        width: 80%;
-        height: 85%;
-   
-    }
-
-    img{
-        width: 100%;
-        object-fit:cover;
-    }
-    */
-
-    #heralds{
-
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        padding: 0vw;
+        gap: 40px;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        
+        clip-path: fill-box;
+        
+        width: 80vw;
+        height: 60vw;
+
+        img{
+            width: 60vw;
+            height: fit-content;
+            
+        
+        }
+
+        #sheep3 img{
+
+            width: 70vw;
+            height: 45vw;
+
+        }
+
+        #smusic img{
+
+            width: 67vw;
+        }
+        
+
     }
-    
+
+   
+
+
+#heralds{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0vw;
 }
+    
+   
+
+
+
 
 #fields{
 
@@ -350,6 +363,23 @@ div{
     width: 80vw;
 
 }
+
+#othertext{ 
+
+    width: 80vw;
+}
+
+#headliner {
+    padding: 0% 0% 10% 0%;
+    width: 80vw;
+    align-content: center;
+    display: flex;
+
+   
+}
+
+
+
 #booktext{
     img{
         padding: 5vw 0vw 0vw 0vw;
@@ -396,7 +426,7 @@ h3{
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    outline: green solid 3px;
+    
     
     width: 80vw;
         
@@ -583,15 +613,15 @@ video{
 
 .overlay2 {
     
-
+    position: fixed;
     height: 30%;
     width: 30%;
-    max-width: 27vw;
-    max-height: 27vw;
+    max-width: 26vw;
+    max-height: 26vw;
     opacity: 0;
     transform: rotate(180deg);
     transition: .5s grow;
-    border-radius: 100%;
+    border-radius: 50%;
     
 }
 
@@ -637,16 +667,13 @@ video{
 }
 
 
-.overlay2 {
-     
-    height: 30%;
-    width: 30%;
-    max-width: 26vw;
-    max-height: 26vw;
-    
-    opacity: 0;
-    transition: .5s;
-    
+#heralds2{
+    height: 10%;
+    width: 8%;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+
 }
 
 
@@ -737,6 +764,7 @@ h1{
     height: 12vw;
     display: flex;
     flex-direction: column;
+    padding: 15% 0% 0% 0%;
 
 }
 
@@ -771,6 +799,8 @@ h1{
 #homebody{
 
     background-color: black;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #typo{
@@ -854,12 +884,12 @@ video{
 
 .overlay{
     position: absolute;
-    top: 10%;
+    top: 15%;
     bottom: 150%;
-    left: 7%;
+    left: 12%;
     right: 0%;
-    height: 80%;
-    width: 85%;
+    height: 70%;
+    width: 75%;
     opacity: 0;
     transition: .5s ease;
     border-radius: 100%;
@@ -898,12 +928,12 @@ video{
 
 .overlay2{
     position: absolute;
-    top: 10.5%;
+    top: 16%;
     bottom: 0%;
-    left: 6.5%;
+    left: 13%;
     right: 0%;
-    height: 60vw;
-    width: 60vw;
+    height: 52vw;
+    width: 52vw;
     opacity: 0;
     transition: .5s ease;
     border-radius: 100%;
@@ -948,3 +978,15 @@ input{
     font-size: 1rem;
 }
 
+#heralds2{
+
+    display: flex;
+    flex-direction: column;
+    
+    
+
+    img{
+        width: 30%;
+        padding: 10% 0% 0% 0%;
+    }
+}
