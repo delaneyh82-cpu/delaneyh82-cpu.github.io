@@ -52,7 +52,7 @@ font-style: normal;*/
 main{
     margin:0;
     
-    background-color:rgb(30, 30, 30);
+    background-color:rgb(0, 0, 0);
     
 }
 
@@ -69,9 +69,10 @@ header{
    
     background-image: url("../vector2-1.png");
     background-repeat: repeat-x;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(0, 0, 0);
     background-size: 125px 175px;
     background-position: top;
+    filter:brightness(20px)
     
 }
 
@@ -167,7 +168,7 @@ header{
     grid-template-columns: 1 1fr;
     align-content: center;
     width: 100vw;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(0, 0, 0);
         
 
         /*padding: 10vw 10vw 10vw 10vw;
@@ -283,20 +284,7 @@ div{
         
 
     }
-
-   
-
-
-#heralds{
-
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding: 0vw;
-}
     
-   
-
 
 
 
@@ -666,13 +654,22 @@ video{
     text-align: center;
 }
 
+#sideinfo{
 
-#heralds2{
-    height: 10%;
-    width: 8%;
-    position: absolute;
-    left: 20%;
-    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    #heralds2{
+        position: absolute;
+        width: 45%;
+        top: 25%;
+        right: 70%;
+
+    }
+
 
 }
 
@@ -749,6 +746,7 @@ h1{
 
     position: relative;
     top: 20px;
+    right: 40px;
     
     font-family: "p22-civilite-no30", sans-serif;
     font-weight: 400;
