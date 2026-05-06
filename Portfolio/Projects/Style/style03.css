@@ -7,6 +7,27 @@ a{
     text-decoration: none;
 }
 
+#link{
+
+    font-family: "rhau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:hsla(317, 39%, 51%, 0.928);
+
+  
+}
+
+#link:hover{
+
+    transform: scale(1.2);
+   
+    text-decoration-color:hsla(317, 39%, 51%, 0.928);
+    filter: drop-shadow(10px 4px 10px #000000);
+    
+    
+    
+}
+
 /*a:hover{
     transform: scale(1.5);
 }*/
@@ -52,7 +73,7 @@ font-style: normal;*/
 main{
     margin:0;
     
-    background-color:rgb(10, 10, 10);
+    background-color:rgb(14, 14, 14);
     
 }
 
@@ -69,9 +90,10 @@ header{
    
     background-image: url("../vector2-4.png");
     background-repeat: repeat-x;
-    background-color: rgb(10, 10, 10);
-    background-size: 125px 175px;
+    background-color: rgb(14, 14, 14);
+    background-size: 150px 200px;
     background-position: top;
+    
     
     
 }
@@ -86,7 +108,7 @@ header{
     position: relative;
     top: -18px;
     left: 2vw;
-    width: 30%;
+    width: 35%;
     padding: 0px;
 
    
@@ -158,8 +180,12 @@ header{
 
     width: 100vw;
     height: 15vh;
-    background-color:rgb(16, 16, 16);
+    background-color:rgb(26, 26, 26);
     color: white;
+
+    font-family: "rhau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -168,7 +194,7 @@ header{
     grid-template-columns: 1 1fr;
     align-content: center;
     width: 100vw;
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(14, 14, 14);
         
 
         /*padding: 10vw 10vw 10vw 10vw;
@@ -296,25 +322,48 @@ div{
     background-color: grey;
 }
 
+#meme{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+#me{
+    display: flex;
+    flex-direction: row;
+}
+
 #about{
-    
-  display: flex;
-  flex-direction: row;
-  
+    display: flex;
+    flex-direction: row;
 
    #me{
         clip-path: circle(35%);
+        width: 40%;
+        justify-content: flex-start;
+        padding: 0%;
+        margin-left: 5%;
+
     }
 
-    /*#meme p{
+    #meme p{
+        width: 65%;
         display: flex;
-        flex-direction: column;
-        width: 40vw;
-        padding: 0vw 0vw 10vw 0vw
-    }*/
+        justify-content: flex-end;
+        
+    }
+
+    
 }
  
+div#about{
 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+}
 #name{
     display:flex;
     flex-direction:column;
@@ -477,9 +526,23 @@ h3{
 #T{
     display: flex;
     flex-direction: row;
-    width: 80vw;
-    height: 40vh;
+    width: 100%;
+    height: 30vh;
 }
+
+#T p, #T img{
+    
+    width: 40%;
+    padding:8% 0% 8% 0%;
+    
+}
+ #T img{
+    position: relative;
+    left: 4%;
+
+
+ }
+
 
 #intro, #displays, #sporty, #dt{
     display: flex;
@@ -496,6 +559,30 @@ h3{
         padding: 0vw 7.5vw;
     }
 }
+
+#sporty{
+
+    padding: 15% 0% 15% 0%;
+}
+
+#dt{
+
+    p{
+    width: 100%;
+    }
+   
+}
+
+#golf, #fitness{
+
+    
+    img{
+        padding: 0%;
+    }
+
+}
+
+
 
 #displays {
 
@@ -572,11 +659,12 @@ video{
     bottom: 15vw;
 
     h1{
-        font-size: 7rem;
-        line-height: 7rem;
+        font-size: 6.5rem;
+        line-height: 6.5rem;
         position: relative;
         right: 5vw;
         text-align: center;
+       
     }
     
 }
@@ -711,8 +799,8 @@ h3{
 
 
 #mainglass{
-    width: 75%;
-    height:75%;
+    width: 90%;
+    height:90%;
 
     display: flex;
     flex-direction: column;
@@ -741,6 +829,7 @@ h1{
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    
 
     font-size: 2.8rem;
 
@@ -762,7 +851,7 @@ h1{
     height: 12vw;
     display: flex;
     flex-direction: column;
-    padding: 15% 0% 0% 0%;
+    padding: 25% 0% 0% 0%;
 
 }
 
@@ -846,17 +935,21 @@ h1{
 #about{
     display: flex;
     flex-direction: column;
-    gap: 0vw; 
+    
+    img{
+        width: 80%;
+    }
 
     #me{
         clip-path: circle(35%);
         padding: 0vw;
+        gap: 0px;
+
     }
-    /*
-    #meme p{
-        width: 80vw;
-        padding: 0vw 0vw 0vw 0vw
-    }*/
+    
+    #meme {
+        padding: 0vw 0vw 10vw 0vw;
+    }
 }
 
 video{
@@ -891,7 +984,7 @@ video{
     opacity: 0;
     transition: .5s ease;
     border-radius: 100%;
-    background-color:hsla(235, 47%, 26%, 0.92);
+    background-color:hsla(317, 39%, 51%, 0.928);
  
 }
 
@@ -935,7 +1028,7 @@ video{
     opacity: 0;
     transition: .5s ease;
     border-radius: 100%;
-    background-color:hsla(235, 47%, 26%, 0.92);/* hsla(317, 33%, 52%, 0.844)*/;
+    background-color: hsla(317, 39%, 51%, 0.928);
 }
 
 .container:hover .overlay2 {
@@ -949,32 +1042,81 @@ video{
 
 
 #forms{
-    height: 500px;
+    
     width: 100vw;
     display: flex;
     justify-content:center ;
     flex-direction: column;
     align-items:center;
-    padding: 30px;
-    color: black;
+    color: rgb(0, 0, 0);
+    gap: 20px;
+    padding: 7% 0% 10% 0%;
+    font-family: "paradigm-pro", serif;
+    font-weight: 300;
+    font-style: normal;
+
+
 }
+
+button {
+
+    width: 10%;
+    height: 10%;
+    background-color: darkolivegreen;
+    font-family: "paradigm-pro", serif;
+    font-weight: 300;
+    font-style: normal;
+    
+
+}
+
+input, textarea{
+    width: 40%;
+    padding: 20px;
+    gap: 20px;
+    font-family: "paradigm-pro", serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: rgb(226, 226, 226);
+    
+}
+
+input[type="radio" ]{
+    accent-color: rgb(97, 227, 199);
+}
+
+input#yes, input#no{
+
+    width: 2%;
+}
+
+input#consent{
+
+    padding: 10%;
+    width: 2%;
+}
+
 
 main#form{
     
-    width: 20vw;
-    height: 30px;
-    padding: 30px;
+    width: 40vw;
+    height: 300px;
+    padding: 50px;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
     font-size:1rem;
+   
+
 }
 
 input{
 
     font-size: 1rem;
 }
+
+
 
 #heralds2{
 
@@ -988,3 +1130,10 @@ input{
         padding: 10% 0% 0% 0%;
     }
 }
+
+#C{
+    width: 50vw;
+}
+
+
+
